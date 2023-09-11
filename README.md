@@ -1,27 +1,53 @@
-# FloridaDashboard
+# Red Tide Dashboard
 
+This is the frontend for a web-dashboard project that aggregates information on Florida's Red Tide phenomenon from
+multiple online sources into a single, easy-to-use dashboard.
+
+This is the final project for the Software Engineering course tought by Professor Tania Roy.
+It was designed and made by [Philip Gray](https://github.com/philipgray), [Ferris Whitney](https://github.com/fwhitney), and me over the course of 8 weeks.
+
+This repository in particular is a copy of the original project, which is no longer deployed for cost reasons. This version, however, is [deployed with GitHub Pages](https://alexwills37.github.io/RedTideDash/).
+
+## Background
+
+*From the website:*
+```
+Red tide, a harmful algae bloom that regularly occurs on the coasts of Florida, creates toxic conditions that negatively impact the environment, marine animals, and human health. It can ruin beach days and endanger animals that call the Florida coasts their home. This dashboard is a collection of updated information to help you stay up-to-date on the current status of red tide in Florida. 
+```
+
+For people in Florida who live by the coasts or may want to visit the beaches, knowing about and understanding the status of the environment
+in real time is valuable, and this dashboard seeks to fulfil that goal.
+
+## Features
+
+- Current measurements of Red Tide in different areas (measured by cell counts of algae), sortable by county
+- Relevant podcasts on Spotify to learn about Red Tide and the environment
+- Graph with the frequency of Red Tide Tweets over time
+  to model the times of the year when Red Tide is present
+- Recent Tweets about Red Tide to see the current conversation
+- Relevant YouTube videos on Red Tide and its health implications
+- Chatboard to dicuss Red Tide and report its appearance in real time
+- Navigation bar to help with usability
+- Confetti effect if you fill in the textbox at the bottom of the website with `Climbing`
+
+Most of these features are dependent on an operating backend server, which is currently not running.
+
+## Connecting to the Backend
+The URL for the backend server must be set up correctly
+in [the database-api.service.ts file](./src/app/services/database-api.service.ts) of this project on **line 75**:
+```
+private backendApiEndpoint = '<backend URL>';
+```
+
+To connect the [GitHub Pages website](https://alexwills37.github.io/RedTideDash/) with the backend, the URL must be configured on the [`gh-pages` branch](https://github.com/AlexWills37/RedTideDash/tree/gh-pages)  of this repository, and then the website must be built to the `/docs` folder.
+
+Alternatively, this repository can be cloned, and both servers (this one, and the backend server) can be run locally (as long as the URL is configured to connect to the local backend server).
+
+
+
+
+
+
+## Angular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
