@@ -12,7 +12,11 @@ This repository in particular is a copy of the original project, which is no lon
 
 *From the website:*
 ```
-Red tide, a harmful algae bloom that regularly occurs on the coasts of Florida, creates toxic conditions that negatively impact the environment, marine animals, and human health. It can ruin beach days and endanger animals that call the Florida coasts their home. This dashboard is a collection of updated information to help you stay up-to-date on the current status of red tide in Florida. 
+Red tide, a harmful algae bloom that regularly occurs on the coasts of Florida,
+creates toxic conditions that negatively impact the environment, marine animals,
+and human health. It can ruin beach days and endanger animals that call the Florida
+coasts their home. This dashboard is a collection of updated information to help
+you stay up-to-date on the current status of red tide in Florida. 
 ```
 
 For people in Florida who live by the coasts or may want to visit the beaches, knowing about and understanding the status of the environment
